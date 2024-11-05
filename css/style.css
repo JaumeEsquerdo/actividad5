@@ -2,12 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+body{
+    background: linear-gradient(180deg, #FFF 0%, #f7cc77 70%, #ffc042 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* HEADER */
 .header{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+
 }
 .header__logo{
     margin-top: 10px;
-    width: 100px;
+    width: 160px;
+}
+
+/* MAIN */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main__titulo{
+    color: #821131;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.tarjeta{
+    margin: 6px;
+    border: 1px solid black;
+    width: 50px;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    margin: 5px;
 }

@@ -5,19 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #FFF 0%, #f7cc77 70%, #ffc042 100%);
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .header__logo {
+            margin-top: 10px;
+            width: 160px;
+        }
+
+        /* MAIN */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .main__titulo {
+            color: #821131;
+            text-align: center;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        .tarjeta {
+            margin: 6px;
+            border: 1px solid black;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        /* FOOTER */
+        .footer {
+            display: flex;
+            margin: 5px;
+        }
+    </style>
 
 
 </head>
 
 <body>
     <header class="header">
-        <a  href="index.html"><img class="header__logo" src="/image/emergency-app.png" alt="Logo Inicio"></a>
+        <a href="index.html"><img class="header__logo" src="/image/emergency-app.png" alt="Logo Inicio"></a>
     </header>
-    <main>
-        
+    <main class="main">
+        <h1 class="main__titulo">Infórmate sobre desastres y ayuda disponible</h1>
+        <section class="tarjeta">
+            <div class="tarjeta__imagen">
+                <h2>Inundaciones Valencia</h2>
+                <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta__imagen">
+                <h2>Inundaciones Valencia</h2>
+                <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta__imagen">
+                <h2>Inundaciones Valencia</h2>
+                <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
+            </div>
+        </section>
+
     </main>
+    <footer class="footer">
+        <a href="index.html"><img class="header__logo" src="/image/emergency-app.png" alt="Logo Inicio"></a>
+
+    </footer>
 
 </body>
 
