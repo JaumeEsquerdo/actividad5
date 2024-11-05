@@ -16,8 +16,7 @@
         }
 
         body {
-            background: linear-gradient(180deg, #FFF 0%, #f7cc77 70%, #ffc042 100%);
-            background-repeat: no-repeat;
+
             height: 100%;
         }
 
@@ -56,16 +55,55 @@
         }
 
         .tarjeta {
+            position: relative;
+            width: 100%;
             margin: 6px;
             border: 1px solid black;
-            width: 500px;
+            max-width: 350px;
+            height: 220px;
             border-radius: 10px;
+            box-shadow: ;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        }
+        .tarjeta:hover{
+            transform: scale(1.10);
+
+        }
+
+        .tarjeta__imagen {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 10px;
+            opacity: 0.7;
+        }
+
+        .tarjeta__titulo {
+            text-align: center;
+            font-size: 20px;
+            color: #FFF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            
+
         }
 
         /* FOOTER */
         .footer {
+            background: linear-gradient(180deg, #ffffff 0%, #fdedcb 40%, #ffce6d 100%);
+            background-repeat: no-repeat;
             display: flex;
-            margin: 5px;
+            margin-top: 5px;
+
         }
     </style>
 
@@ -79,22 +117,21 @@
     <main class="main">
         <h1 class="main__titulo">Infórmate sobre desastres y ayuda disponible</h1>
         <section class="tarjeta">
-            <div class="tarjeta__imagen">
-                <h2>Inundaciones Valencia</h2>
-                <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
-            </div>
+            <h2 class="tarjeta__titulo">inundaciones en Valencia</h2>
+            <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
+        </section>
+
+        <section class="tarjeta">
+
+            <h2 class="tarjeta__titulo">incendio en el Amazonas</h2>
+            <a href="#"><img class="tarjeta__imagen" src="/image/amazonas.webp" alt=""></a>
+
         </section>
         <section class="tarjeta">
-            <div class="tarjeta__imagen">
-                <h2>Inundaciones Valencia</h2>
-                <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
-            </div>
-        </section>
-        <section class="tarjeta">
-            <div class="tarjeta__imagen">
-                <h2>Inundaciones Valencia</h2>
-                <a href="#"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
-            </div>
+
+            <h2 class="tarjeta__titulo">volcán en La Palma</h2>
+            <a href="#"><img class="tarjeta__imagen" src="/image/la-palma.jpg" alt=""></a>
+
         </section>
 
     </main>
