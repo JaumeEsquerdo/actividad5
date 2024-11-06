@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <!-- <link rel="stylesheet" href="/css/style.css"> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -18,14 +18,15 @@
         body {
 
             height: 100%;
+            background: linear-gradient(180deg, #ffffff 0%, #fdedcb 40%, #ffce6d 100%);
         }
 
         /* HEADER */
         .header {
             display: flex;
             align-items: center;
-            justify-content: center;
-
+            justify-content: space-around;
+            margin: 10px;
         }
 
         .header__logo {
@@ -38,13 +39,14 @@
             padding: 5px;
             font-size: 1rem;
             border-radius: 4px;
-            border: 1px solid #E85C0D;
-        }
-        .header__select:active{
             border: 2px solid #E85C0D;
         }
 
-        .header__boton{
+        .header__select:active {
+            border: 2px solid #881022;
+        }
+
+        .header__boton {
             padding: 5px;
             border-radius: 5px;
             border: 1px solid #E85C0D;
@@ -76,7 +78,6 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(180deg, #ffffff 0%, #fdedcb 40%, #ffce6d 100%);
             background-repeat: no-repeat;
             z-index: -2;
             min-height: 100vh;
@@ -85,7 +86,7 @@
 
         .main__titulo {
             color: #C7253E;
-            margin: 10px;
+            margin: 0.625rem;
             display: flex;
             justify-content: center;
             margin-top: 20px;
@@ -172,9 +173,11 @@
 
         /* FOOTER */
         .footer {
+            margin-top: 0.625rem;
 
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
 
 
         }
@@ -183,6 +186,18 @@
             display: flex;
             text-decoration: none;
             margin: 10px;
+            color: #C7253E;
+            font-size: 1.2rem;
+        }
+
+        .footer__enlace:visited {
+            color: black;
+
+        }
+      
+        .footer__enlace--rrss{
+            font-size: 1.7rem;
+            
         }
     </style>
 
@@ -195,8 +210,8 @@
         <nav>
             <form action="" method="get">
                 <select class="header__select" name="menu" id="menu-select">
-                    <option value="dana-valencia-2024.html">Actualidad</option>
-                    <option value="#">Ayuda</option>
+                    <option value="tel:666000666">Ayuda</option>
+                    <option value="#">Actualidad</option>
                     <option value="#">Por zonas</option>
                 </select>
                 <button class="header__boton" type="submit">Ir</button>
@@ -207,7 +222,7 @@
     <main class="main">
 
         <div class="main__background"></div>
-        <h1 class="main__titulo"><span class="main__titulo--destacado">Infórmate.</span> De los desastres y la ayuda
+        <h1 class="main__titulo"><span class="main__titulo--destacado">Infórmate</span> de los desastres y la ayuda
             disponible.</h1>
 
         <section class="tarjeta">
@@ -215,7 +230,7 @@
             <h2 class="tarjeta__titulo">Inundaciones en Valencia</h2>
             <p class="tarjeta__fecha">29 de octubre de 2024</p>
             <div class="tarjeta__boton">
-                <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más.</a>
+                <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más</a>
             </div>
             <a href="/dana-valencia-2024.html"><img class="tarjeta__imagen" src="/image/inundaciones.jpg" alt=""></a>
 
@@ -226,7 +241,7 @@
             <h2 class="tarjeta__titulo">Incendio en el Amazonas</h2>
             <p class="tarjeta__fecha">22 de agosto de 2019</p>
             <div class="tarjeta__boton">
-                <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más.</a>
+                <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más</a>
             </div>
             <a href="#"><img class="tarjeta__imagen" src="/image/amazonas.webp" alt=""></a>
 
@@ -236,7 +251,7 @@
             <h2 class="tarjeta__titulo">Volcán en La Palma</h2>
             <p class="tarjeta__fecha">19 de septiembre de 2021</p>
             <div class="tarjeta__boton">
-                <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más.</a>
+                <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más</a>
             </div>
             <a href="#"><img class="tarjeta__imagen" src="/image/la-palma.jpg" alt=""></a>
 
@@ -244,10 +259,11 @@
 
     </main>
     <footer class="footer">
-        <a class="footer__enlace" href="">Home</a>
-        <a class="footer__enlace" href="">Instagram</a>
-        <a class="footer__enlace" href="">X</a>
-        <a class="footer__enlace" href="">FAQs</a>
+        <a class="footer__enlace footer__enlace--ayuda" href="tel:666000666">Tel. Ayuda</a>
+
+        <a class="footer__enlace footer__enlace--rrss" href="#"><i class="fab fa-twitter-square"></i></i></a>
+        <a class="footer__enlace footer__enlace--rrss" href="#"><i class="fab fa-instagram-square"></i></a>
+        <a class="footer__enlace" href="#">FAQs</a>
     </footer>
 
 </body>
