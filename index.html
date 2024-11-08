@@ -18,7 +18,7 @@
         body {
 
             height: 100vh;
-            background-color: #ffce6b5c;
+            /* background-color: #ffce6b5c; */
             display: flex;
             flex-direction: column;
 
@@ -53,6 +53,9 @@
             font-weight: bold;
         }
 
+        .header__menu {
+            display: none;
+        }
 
         .header__select {
             padding: 5px;
@@ -198,16 +201,22 @@
 
         /* FOOTER */
         .footer {
+            
             margin-top: auto;
-
+            border-top: 1px solid #E85C0D;
             display: flex;
+            flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.05);
+            box-shadow:8px 6px 6px 7px rgba(0, 0, 0, 0.2);
 
         }
 
         .footer__enlace {
+            justify-content: space-evenly;
+            align-items: center;
             display: flex;
             text-decoration: none;
             margin: 10px;
@@ -223,6 +232,49 @@
         .footer__enlace--rrss {
             font-size: 1.7rem;
 
+        }
+        .footer__enlaces{
+            padding: 2em;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+        .footer__autor{
+            color: #E85C0D;
+            opacity: 0.4;
+            margin: 1.6em;
+        }
+
+        @media (min-width: 768px) {
+            .main{
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+            .main__titulo{
+                margin: 0.8em;
+            }
+
+            .header__select,
+            .header__boton {
+                display: none;
+            }
+
+            .header__menu {
+                display: flex;
+                gap: 2.5rem;
+                list-style: none;
+            }
+
+            .header__nav {
+                color: #881022;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            .header__nav:hover {
+                color: #C7253E;
+            }
         }
     </style>
 
@@ -242,6 +294,11 @@
                 </select>
                 <button class="header__boton" type="submit">Ir</button>
             </form>
+            <ul class="header__menu">
+                <li><a class="header__menu header__nav" href="tel:666000666">Ayuda</a></li>
+                <li><a class="header__menu header__nav" href="#">Actualidad</a></li>
+                <li><a class="header__menu header__nav" href="#">Por zonas</a></li>
+            </ul>
         </nav>
 
 
@@ -297,11 +354,14 @@
 
     </main>
     <footer class="footer">
-        <a class="footer__enlace footer__enlace--ayuda" href="tel:666000666">Tel. Ayuda</a>
+        <div class="footer__enlaces">
+            <a class="footer__enlace footer__enlace--ayuda" href="tel:666000666">Tel. Ayuda</a>
 
-        <a class="footer__enlace footer__enlace--rrss" href="#"><i class="fab fa-twitter-square"></i></i></a>
-        <a class="footer__enlace footer__enlace--rrss" href="#"><i class="fab fa-instagram-square"></i></a>
-        <a class="footer__enlace" href="#">FAQs</a>
+            <a class="footer__enlace footer__enlace--rrss" href="#"><i class="fab fa-twitter-square"></i></i></a>
+            <a class="footer__enlace footer__enlace--rrss" href="#"><i class="fab fa-instagram-square"></i></a>
+            <a class="footer__enlace" href="#">FAQs</a>
+        </div>
+        <p class="footer__autor">Web creada por Jaume.</p>
     </footer>
 
 </body>
