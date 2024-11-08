@@ -17,8 +17,11 @@
 
         body {
 
-            height: 100%;
+            height: 100vh;
             background-color: #ffce6b5c;
+            display: flex;
+            flex-direction: column;
+            
 
         }
 
@@ -79,6 +82,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            flex: 1;
 
 
         }
@@ -114,7 +118,7 @@
             position: relative;
             width: 100%;
             margin: 12px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             max-width: 100%;
             height: 220px;
             border-radius: 10px;
@@ -142,17 +146,21 @@
             border-radius: 10px;
             /* opacity: 0.7; */
         }
+        .header_tarjeta{
+            
+
+        }
 
         .tarjeta__titulo {
             text-align: center;
-            font-size: 1, 25rem;
             color: #FFF;
             position: absolute;
             top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100%;
+            /* width: 100%; */
             text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0.5rem;
         }
 
         .tarjeta__fecha {
@@ -162,8 +170,8 @@
             position: absolute;
             left: 50%;
             top: 30%;
-            width: 100%;
-            transform: translate(-50%, -50%);
+            /* width: 100%; */
+            transform: translate(-50%, 40%);
 
         }
 
@@ -192,7 +200,7 @@
 
         /* FOOTER */
         .footer {
-            margin-top: 0.625rem;
+            margin-top: auto;
 
             display: flex;
             justify-content: space-evenly;
@@ -259,9 +267,10 @@
         </section>
 
         <section class="tarjeta">
-
-            <h2 class="tarjeta__titulo">Incendio en el Amazonas</h2>
-            <p class="tarjeta__fecha">22 de agosto de 2019</p>
+            
+                <h2 class="header__tarjeta tarjeta__titulo">Incendio en el Amazonas</h2>
+                <p class="header__tarjeta tarjeta__fecha">22 de agosto de 2019</p>
+            
             <div class="tarjeta__boton">
                 <a class="tarjeta__boton-accion" href="/dana-valencia-2024.html">Infórmate más</a>
             </div>
