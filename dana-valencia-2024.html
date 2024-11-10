@@ -34,35 +34,44 @@
     </header>
 
     <main class="main">
-        <sidebar>
+        
+        
+        <sidebar class="navegacion" >
 
 
             <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Mapa</li>
-                    <li>Centros de asistencia</li>
-                    <li>Voluntariado</li>
+                <ul class="navegacion navegacion__ul">
+                    <li ><a class="navegacion__item" href="#inicio">Inicio</a></li>
+                    <li ><a class="navegacion__item" href="#mapa">Mapa</a></li>
+                    <li ><a class="navegacion__item" href="#centros">Centros de asistencia</a></li>
+                    <li ><a class="navegacion__item" href="#voluntarios">Voluntariado</a></li>
                 </ul>
             </nav>
         </sidebar>
-        <h1>Dana en Valencia 2024</h1>
+        <h1 class="h1" id="inicio">Dana en Valencia 2024</h1>
 
-        <p>Las inundaciones en Valencia de 2024 han dejado varios barrios bajo el agua, con cientos de personas
+        <p class="parrafo">Las inundaciones en Valencia de 2024 han dejado varios barrios bajo el agua, con cientos de personas
             desplazadas y daños graves en infraestructuras públicas y privadas. Los equipos de rescate, especialmente
             los VOLUNTARIOS, siguen trabajando en la zona para asegurar la evacuación de ciertas familias que han
             perdidos sus casas y ofrecer apoyo, tanto a nivel de alimentos, ropa, como apoyo económico y moral a las
             familias afectadas.</p>
 
-        <section>
-            <h2>Mapa de las zonas afectas en Valencia</h2>
+        <section class="section">
+            <h2 id="mapa">Mapa de las zonas afectas en Valencia</h2>
             <p>A continuación, puedes ver el área afectada en el mapa para situarte por dónde ha ocurrido la tragedia y
                 para
                 que puedas acercarte y ayudar al sitio correcto.</p>
             <!-- AQUÍ VA EL MAPA -->
+            <iframe  class="map-container
+            " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308199.32416214846!2d-0.6014283982220268!3d39.3738121968568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1731255749906!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <h2>Puntos de entrega!</h2>
-        <ul class="lista-tarjetas">
+
+
+
+        <h2 class="h2" id="centros">Puntos de entrega!</h2>
+        <ul class="lista-tarjetas" >
             <li class="tarjeta">
                 <header>
                     <h3>EPPPS</h3>
@@ -173,8 +182,8 @@
 
         </ul>
 
-        <section>
-            <h2>Noticias en tiempo real</h2>
+        <section class="section">
+            <h2 class="h2">Noticias en tiempo real</h2>
             <!-- AQUÍ PONER ENLACES EXTERNOS, COMO ALGUNOS TWITTER -->
             <ul>
                 <li></li>
@@ -185,7 +194,7 @@
             </ul>
         </section>
 
-        <form action="voluntariado-form" method="get">
+        <form action="voluntariado-form" method="get" id="voluntarios">
             <header>
                 <h2> Inscripción para Voluntariado</h2>
                 <p>Si estás interesado en colaborar como voluntario durante esta emergencia, rellena el formulario a
@@ -206,7 +215,7 @@
             <h5> Nos pondremos en contacto contigo para coordinar las labores de asistencia y rescate.</h5>
         </form>
 
-        <section class="galeria">
+        <section class="section">
             <h2>Galería de imágenes</h2>
             <div class="galeria__imagenes">
                 <img src="" alt="">

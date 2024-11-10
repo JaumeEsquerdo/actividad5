@@ -6,11 +6,12 @@
 }
 
 body {
-
-    height: 100vh;
+    max-width: 100%;
+    min-height: 100vh;
     /* background-color: #ffce6b5c; */
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
 
 }
@@ -236,6 +237,56 @@ body {
     color: #E85C0D;
     opacity: 0.4;
     margin: 0.7em;
+}
+
+/* CSS DANA PAGE */
+.header, .main, .footer, .navegacion, .lista-tarjetas, .galeria__imagenes, .map-container{
+    max-width: 100%;
+    margin: 1rem;
+    height: auto;
+}
+.navegacion {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    
+    
+}
+.navegacion__ul{
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    z-index: 10;
+    
+    
+
+}
+.navegacion__item{
+    text-decoration: none;
+    color: #881022;
+}
+.parrafo{
+    margin: 1rem;
+
+}
+
+.h1 {
+    color: #881022;
+}
+
+
+.lista-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    margin: 1rem;
 }
 
 @media (min-width: 768px) {
