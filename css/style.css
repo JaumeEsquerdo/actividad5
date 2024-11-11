@@ -363,6 +363,7 @@ span {
     justify-content: center;
 }
 .section__links{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap; /* Permite que se ajusten en varias filas en móviles */
     gap: 10px;
