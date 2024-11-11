@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dana Valencia 2024</title>
+    <meta name="keywords" content="DANA Valencia, ayuda DANA, información DANA Valencia, centros de ayuda, noticias DANA, recogida de material DANA, voluntariado Valencia">
+    <meta name="description" content="Aplicación de ayuda y asistencia en tiempo real para afectados por la DANA en Valencia. Encuentra puntos de recogida, centros de ayuda, y noticias actualizadas sobre el impacto de las lluvias y cómo colaborar.">
+
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta name="author" content="Jaume Esquerdo">
 </head>
 
 <body>
@@ -34,35 +39,41 @@
     </header>
 
     <main class="main">
-        
-        
-        <sidebar class="navegacion" >
+
+
+        <sidebar class="navegacion">
 
 
             <nav>
                 <ul class="navegacion navegacion__ul">
-                    <li ><a class="navegacion__item" href="#inicio">Inicio</a></li>
-                    <li ><a class="navegacion__item" href="#mapa">Mapa</a></li>
-                    <li ><a class="navegacion__item" href="#centros">Centros de asistencia</a></li>
-                    <li ><a class="navegacion__item" href="#voluntarios">Voluntariado</a></li>
+                    <li><a class="navegacion__item" href="#inicio">Inicio</a></li>
+                    <li><a class="navegacion__item" href="#mapa">Mapa</a></li>
+                    <li><a class="navegacion__item" href="#centros">Centros de asistencia</a></li>
+                    <li><a class="navegacion__item" href="#voluntarios">Voluntariado</a></li>
                 </ul>
             </nav>
         </sidebar>
         <h1 class="h1" id="inicio">Dana en Valencia 2024</h1>
+        <div class="descripcion">
+            <img class="descripcion__img" src="/image/dana.jpg" alt="">
+            <p class="parrafo descripcion__parrafo">Las inundaciones en Valencia de 2024 han dejado varios barrios bajo
+                el agua, con cientos
+                de personas
+                desplazadas y daños graves en infraestructuras públicas y privadas. Los equipos de rescate,
+                especialmente
+                los VOLUNTARIOS, siguen trabajando en la zona para asegurar la evacuación de ciertas familias que han
+                perdidos sus casas y ofrecer apoyo, tanto a nivel de alimentos, ropa, como apoyo económico y moral a las
+                familias afectadas.</p>
+        </div>
 
-        <p class="parrafo">Las inundaciones en Valencia de 2024 han dejado varios barrios bajo el agua, con cientos de personas
-            desplazadas y daños graves en infraestructuras públicas y privadas. Los equipos de rescate, especialmente
-            los VOLUNTARIOS, siguen trabajando en la zona para asegurar la evacuación de ciertas familias que han
-            perdidos sus casas y ofrecer apoyo, tanto a nivel de alimentos, ropa, como apoyo económico y moral a las
-            familias afectadas.</p>
-
-        <section class="section">
-            <h2 id="mapa">Mapa de las zonas afectas en Valencia</h2>
-            <p>A continuación, puedes ver el área afectada en el mapa para situarte por dónde ha ocurrido la tragedia y
+        <section id="mapa" class="section">
+            <h2 class="h2">Mapa de las zonas afectas en Valencia</h2>
+            <p class="parrafo">A continuación, puedes ver el área afectada en el mapa para situarte por dónde ha
+                ocurrido la tragedia y
                 para
                 que puedas acercarte y ayudar al sitio correcto.</p>
             <!-- AQUÍ VA EL MAPA -->
-            <iframe  class="map-container
+            <iframe class="map-container
             " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308199.32416214846!2d-0.6014283982220268!3d39.3738121968568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1731255749906!5m2!1ses!2ses"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -71,97 +82,108 @@
 
 
         <h2 class="h2" id="centros">Puntos de entrega!</h2>
-        <ul class="lista-tarjetas" >
-            <li class="tarjeta">
+        <ul class="lista-tarjetas">
+            <li class="tarjeta tarjeta__dana">
                 <header>
-                    <h3>EPPPS</h3>
+                    <h3 class="tarjeta-h3">EPPPS</h3>
                 </header>
                 <h6>Avenida de Jesús Morante Borrás, 46024, Valencia, Comunidad Valenciana</h6>
                 <ul>
-                    <li>Vehículos permitidos: Camión grande (>3500kg)</li>
-                    <li>Horario: Lunes a Viernes : 9:30-14:30h</li>
-                    <li> Teléfono: <a href="tel:+34623511986">+34 623 511 986 </a></li>
-                    <li> Email: <a href="mailto:info@eppps.es">info@eppps.es</a></li>
-                    <li> Información adicional: Avisad antes por teléfono tanto para entrega/recogida para poder
+                    <li class="contenido-tarjeta"> <span>Vehículos permitidos: </span> Camión grande (>3500kg)</li>
+                    <li class="contenido-tarjeta"> <span>Horario: </span>Lunes a Viernes : 9:30-14:30h</li>
+                    <li class="contenido-tarjeta"> <span>Teléfono: </span> <a href="tel:+34623511986">+34 623 511 986
+                        </a></li>
+                    <li class="contenido-tarjeta"> <span>Email: </span> <a href="mailto:info@eppps.es">info@eppps.es</a>
+                    </li>
+                    <li class="contenido-tarjeta"> <span>Información adicional: </span> Avisad antes por teléfono tanto
+                        para entrega/recogida para poder
                         coordinar voluntariaos para descargas/cargas Protección: botas de agua, mascarillas, guantes,
-                        gafas de protección... Desinfección: Lejía, cubos, mangueras... Herramientas: bombas de agua,
-                        generadores eléctricos/gasolina, palas, capazos... Mobiliarios: mesas, pupitres, sillas,
-                        pizarras...</li>
+                        gafas de protección...</li>
                 </ul>
 
 
 
             </li>
-            <li class="tarjeta">
+            <li class="tarjeta tarjeta__dana">
                 <header>
-                    <h3>Recogida y donación material para voluntarios</h3>
+                    <h3 class="tarjeta-h3">Recogida y donación material para voluntarios</h3>
 
                 </header>
                 <h6>Falla Almirante Cadarso - Conde Altea
                 </h6>
                 <ul>
-                    <li>Vehículos admitidos:Camión mediano</li>
-                    <li>Horario: 9:00 - 13:00 y 16:00 - 20:00</li>
-                    <li> Teléfono: <a href="tel:+34679857053">+34 679 857 053 </a></li>
-                    <li> Información adicional: Se recogen y se donan luego a los voluntarios, lo siguiente:
+                    <li class="contenido-tarjeta"> <span>Vehículos admitidos: </span>Camión mediano</li>
+                    <li class="contenido-tarjeta"> <span>Horario: </span> 9:00 - 13:00 y 16:00 - 20:00</li>
+                    <li class="contenido-tarjeta"> <span>Teléfono: </span> <a href="tel:+34679857053">+34 679 857 053
+                        </a></li>
+                    <li class="contenido-tarjeta"> <span>Información adicional: </span> Se recogen y se donan luego a
+                        los voluntarios, lo siguiente:
                         mascarillas, botas, guantes, gafas, escobas, haraganes, cubos, bolsas, cinta aislante o
                         americana... </li>
                 </ul>
 
             </li>
-            <li class="tarjeta">
+            <li class="tarjeta tarjeta__dana">
                 <header>
-                    <h3>La resistencia</h3>
+                    <h3 class="tarjeta-h3">La resistencia</h3>
 
                 </header>
                 <h6>Avenida de Jesús Morante Borrás, 46024, Valencia, Comunidad Valenciana</h6>
                 <ul>
-                    <li>Vehículos admitidos :Camión grande (>3500kg)</li>
-                    <li>Horario: 24 horas</li>
-                    <li> Teléfono: <a href="tel:+692483016">+34 692 48 30 16</a></li>
-                    <li> Email: <a href="mailto:miguelgarcab@gmail.com">miguelgarcab@gmail.com</a></li>
-                    <li> Información adicional: Avisad con algo de antelacion para organizar a los voluntarios y que
+                    <li class="contenido-tarjeta"> <span>Vehículos admitidos: </span> Camión grande (>3500kg)</li>
+                    <li class="contenido-tarjeta"><span>Horario: </span> 24 horas</li>
+                    <li class="contenido-tarjeta"> <span>Teléfono: </span> <a href="tel:+692483016">+34 692 48 30 16</a>
+                    </li>
+                    <li class="contenido-tarjeta"> <span>Email:</span> <a
+                            href="mailto:miguelgarcab@gmail.com">miguelgarcab@gmail.com</a></li>
+                    <li class="contenido-tarjeta"> <span>Información adicional:</span> Avisad con algo de antelacion
+                        para organizar a los voluntarios y que
                         puedan ayudar a cargar y descargar</li>
                 </ul>
 
 
             </li>
-            <li class="tarjeta">
+            <li class="tarjeta tarjeta__dana">
                 <header>
-                    <h3>Polideportivo Municipal Almussafes</h3>
+                    <h3 class="tarjeta-h3">Polideportivo Municipal Almussafes</h3>
                     <h6>Avda Laura Méndez, s/n, 46440 Almussafes, Valencia</h6>
 
                 </header>
 
                 <ul>
-                    <li>Vehículos permitidos: Camión grande (>3500kg)</li>
-                    <li> Teléfono: <a href="tel:+34651339086">+34 651 339 086</a></li>
-                    <li> Información adicional: materiales y herramientas de limpieza </li>
+                    <li class="contenido-tarjeta"> <span>Vehículos permitidos:</span> Camión grande (>3500kg)</li>
+                    <li class="contenido-tarjeta"> <span>Teléfono:</span> <a href="tel:+34651339086">+34 651 339 086</a>
+                    </li>
+                    <li class="contenido-tarjeta"> <span>Información adicional:</span> materiales y herramientas de
+                        limpieza </li>
                 </ul>
 
 
 
             </li>
-            <li class="tarjeta">
+            <li class="tarjeta tarjeta__dana">
                 <header>
-                    <h3>IKEA</h3>
+                    <h3 class="tarjeta-h3">IKEA</h3>
                     <h6>Carrer Alqueria Nova, 12, 46910 València, Valencia</h6>
 
                 </header>
 
                 <ul>
-                    <li>Vehículos admitidos: Camión grande (>3500kg)</li>
-                    <li>Horario:</li>
-                    <li> Teléfono: <a href="tel:+34611655454">+34 611 655 454</a></li>
-                    <li> Email: <a href="mailto:info@eppps.es">info@eppps.es</a></li>
-                    <li> Información adicional: Furgonetas para transportar materiales a otros puntos - Muchos
+                    <li class="contenido-tarjeta">Vehículos admitidos: Camión grande (>3500kg)</li>
+                    <li class="contenido-tarjeta"> <span>Horario:</span></li>
+                    <li class="contenido-tarjeta"> <span>Teléfono:</span> <a href="tel:+34611655454">+34 611 655 454</a>
+                    </li>
+                    <li class="contenido-tarjeta"> <span>Email:</span> <a href="mailto:info@eppps.es">info@eppps.es</a>
+                    </li>
+                    <li class="contenido-tarjeta"> <span>Información adicional:</span> Furgonetas para transportar
+                        materiales a otros puntos - Muchos
                         voluntarios para carga, descarga y clasificar ROPA NO </li>
                 </ul>
 
             </li>
-            <li class="tarjeta">
+            <li class="tarjeta tarjeta__dana">
                 <header>
-                    <h3>La Tapicería
+                    <h3 class="tarjeta-h3">La Tapicería
                     </h3>
                     <h6>Cam. de la Foya, 2D, 46470 Albal, Valencia
                     </h6>
@@ -169,10 +191,12 @@
                 </header>
 
                 <ul>
-                    <li>Vehículos admitidos: Camión mediano</li>
-                    <li>Horario: 9:00 - 21:00</li>
-                    <li> Teléfono: <a href="tel:+34675515435">+34 675 515 435</a></li>
-                    <li> Información adicional: - Furgonetas para transportar a otras zonas - Agua y comida en lata -
+                    <li class="contenido-tarjeta"><span>Vehículos admitidos:</span> Camión mediano</li>
+                    <li class="contenido-tarjeta"><span>Horario:</span> 9:00 - 21:00</li>
+                    <li class="contenido-tarjeta"><span>Teléfono:</span> <a href="tel:+34675515435">+34 675 515 435</a>
+                    </li>
+                    <li class="contenido-tarjeta"> <span>Información adicional:</span> - Furgonetas para transportar a
+                        otras zonas - Agua y comida en lata -
                         Materiales: escobones, escurresuelos (como los limpiacristales grandes), cubos / capazos, botas
                         de agua, linternas (con pilas) y mascarillas aún tienen algo</li>
                 </ul>
@@ -185,45 +209,65 @@
         <section class="section">
             <h2 class="h2">Noticias en tiempo real</h2>
             <!-- AQUÍ PONER ENLACES EXTERNOS, COMO ALGUNOS TWITTER -->
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="section__links">
+                <li><a href="https://x.com/abc_es">
+                        <img class="link-twitter" src="/image/abc.jpg" alt="abc">
+                    </a></li>
+                <li><a href="https://x.com/apunt_media">
+                        <img class="link-twitter" src="/image/apunt.jpg" alt="a punt">
+                    </a></li>
+                <li><a href="https://x.com/elmundoes">
+                        <img class="link-twitter" src="/image/elmundo.jpg" alt="el mundo">
+                    </a></li>
+                <li><a href="https://x.com/cuatro">
+                        <img class="link-twitter" src="/image/cuatro.jpg" alt="cuatro">
+                    </a></li>
                 <li></li>
             </ul>
         </section>
 
-        <form action="voluntariado-form" method="get" id="voluntarios">
-            <header>
-                <h2> Inscripción para Voluntariado</h2>
-                <p>Si estás interesado en colaborar como voluntario durante esta emergencia, rellena el formulario a
+        <form id="f" class="form-content" action="voluntariado-form" method="get" id="voluntarios">
+            <header class="formulario__header">
+                <h2 class="formulario__titulo"> Inscripción para Voluntariado</h2>
+                <p class="formulario__descripcion">Si estás interesado en colaborar como voluntario durante esta
+                    emergencia, rellena el formulario a
                     continuación.
                     Tu ayuda es fundamental para apoyar a las personas afectadas y ayudar en las labores de
                     recuperación.</p>
             </header>
-            <label for="nombre">*</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
-            <label for="telefono">*</label>
-            <input type="tel" id="teléfono" name="teléfono" required placeholder="Teléfono de contacto">
-            <label for="correo"></label>
-            <input type="email" id="correo" name="correo" placeholder="Tu correo ej: nombre@ejemplo.com">
-            <label for="fecha">*Día que quieres acudir</label>
-            <input type="date" id="fecha" name="fecha" required>
+            <section class="form_contenido">
+                <div class="formulario__campo">
+                    <label for="nombre">*</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+                </div>
+                <div class="formulario__campo">
+                    <label for="telefono">*</label>
+                    <input type="tel" id="teléfono" name="teléfono" required placeholder="Teléfono de contacto">
+                </div>
+                <div class="formulario__campo">
+                    <label for="correo"> </label>
+                    <input type="email" id="correo" name="correo" placeholder="Tu correo ej: nombre@ejemplo.com">
+                </div>
 
-            <button type="submit">Enviar</button>
-            <h5> Nos pondremos en contacto contigo para coordinar las labores de asistencia y rescate.</h5>
+                <div class="formulario__campo formulario__campo--fecha">
+                    <label for="fecha">*Día que quieres acudir</label>
+                    <input type="date" id="fecha" name="fecha" required min="2024-11-11">
+                </div>
+
+                <button type="submit">Enviar</button>
+                <h5 class="formulario__mensaje"> Nos pondremos en contacto contigo para coordinar las labores de
+                    asistencia y rescate.</h5>
+            </section>
         </form>
 
         <section class="section">
-            <h2>Galería de imágenes</h2>
-            <div class="galeria__imagenes">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <h2 class="h2">Galería de imágenes</h2>
+            <div class="galeria">
+                <img src="/image/dana1.jpg" alt="dana2024">
+                <img src="/image/dana2.jpg" alt="dana2024">
+                <img src="/image/dana3.jpg" alt="dana2024">
+                <img src="/image/dana4.jpeg" alt="dana2024">
+
             </div>
         </section>
 
