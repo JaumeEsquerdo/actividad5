@@ -192,7 +192,7 @@ body {
 
 }
 
-.tarjeta__dana{
+.tarjeta__dana {
     background-color: #f7eeef;
 }
 
@@ -255,7 +255,7 @@ body {
 .map-container {
     max-width: 100%;
 
-    
+
 }
 
 .navegacion {
@@ -274,11 +274,13 @@ body {
 
 
 }
-h6{
+
+h6 {
     padding: 0.3rem;
     font-style: italic;
     text-align: center;
 }
+
 .contenido-tarjeta {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -286,11 +288,13 @@ h6{
     list-style: none;
     word-wrap: break-word;
 }
-.contenido-tarjeta a{
+
+.contenido-tarjeta a {
     color: #a14e1d;
     text-decoration: none;
 }
-button{
+
+button {
     padding: 5px;
     border-radius: 4px;
 }
@@ -349,8 +353,10 @@ span {
 .descripcion__img {
     width: 100%;
     height: 30rem;
-    max-height: 100vh; /* Limita la altura a la vista del dispositivo */
-    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    max-height: 100vh;
+    /* Limita la altura a la vista del dispositivo */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte adecuadamente */
 }
 
 .descripcion__parrafo {}
@@ -362,10 +368,12 @@ span {
     align-items: center;
     justify-content: center;
 }
-.section__links{
+
+.section__links {
     justify-content: center;
     display: flex;
-    flex-wrap: wrap; /* Permite que se ajusten en varias filas en móviles */
+    flex-wrap: wrap;
+    /* Permite que se ajusten en varias filas en móviles */
     gap: 10px;
     padding: 0;
     margin: 1rem;
@@ -373,11 +381,14 @@ span {
     margin: 1rem;
     list-style: none;
 }
-.link-twitter{
+
+.link-twitter {
     width: 10rem;
     border-radius: 8px;
     list-style: none;
+
 }
+
 .h2 {
     margin: 1.6rem;
     text-align: center;
@@ -385,14 +396,17 @@ span {
 }
 
 /* formulario */
-#f{ width: 100%;}
+#f {
+    width: 100%;
+}
+
 .formulario {
-    background-color: #f5f5f7; 
+    background-color: #f5f5f7;
     padding: 40px;
-    border-radius: 10px; 
-    max-width: 600px; 
-    margin: 0 auto; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .formulario__header {
@@ -415,23 +429,23 @@ span {
 
 .formulario__campo {
     margin-bottom: 20px;
-    
+
 
 }
 
-.formulario__campo--fecha{
+.formulario__campo--fecha {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-input{
+input {
     height: 1.8rem;
     width: 17rem;
 }
 
-.form-content{
+.form-content {
     padding: 1rem;
     /* background-color: rgb(235, 176, 176); */
     background: linear-gradient(#f8bdc6, #ffffff);
@@ -449,13 +463,13 @@ input{
 }
 
 .formulario__input:focus {
-    border-color: #881022; 
+    border-color: #881022;
     outline: none;
     box-shadow: 0 0 0 2px rgba(227, 0, 57, 0.2);
 }
 
 .formulario__boton {
-    background-color: #C7253E; 
+    background-color: #C7253E;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -467,7 +481,7 @@ input{
 }
 
 .formulario__boton:hover {
-    background-color: #E85C0D; 
+    background-color: #E85C0D;
 }
 
 .formulario__mensaje {
@@ -477,7 +491,7 @@ input{
     margin-top: 20px;
 }
 
-.form_contenido{
+.form_contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,15 +501,17 @@ input{
 /* GALERIA IMAGENES */
 .galeria {
     display: grid;
-    grid-template-columns: 1fr; /* Una columna por defecto */
+    grid-template-columns: 1fr;
+    /* Una columna por defecto */
     gap: 10px;
     list-style-type: none;
     padding: 0;
-    
 
-    
+
+
 }
-.galeria img{
+
+.galeria img {
     border-radius: 24px;
 
     padding: 1rem;
@@ -539,24 +555,29 @@ input{
     .header__nav:hover {
         color: #C7253E;
     }
+
     .galeria {
-        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambia a 2 columnas */
     }
 
     .lista-tarjetas {
-        flex-direction: row; 
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;     
+        justify-content: center;
         gap: 20px;
     }
+
     .lista-tarjetas .tarjeta {
-        width:20.33%; 
-       height:20.625rem ; 
+        width: 20.33%;
+        height: 20.625rem;
     }
-    p{
+
+    p {
         font-size: 1.3rem;
     }
-    body{
+
+    body {
         font-size: 1.1rem;
     }
 
