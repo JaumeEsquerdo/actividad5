@@ -194,6 +194,7 @@ body {
 
 .tarjeta__dana {
     background-color: #f7eeef;
+    overflow: auto;
 }
 
 /* FOOTER */
@@ -363,10 +364,10 @@ span {
 
 .section {
     margin: 1rem;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .section__links {
