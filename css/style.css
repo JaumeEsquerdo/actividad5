@@ -447,9 +447,10 @@ input {
 }
 
 .form-content {
+    width: 100%;
     padding: 1rem;
     /* background-color: rgb(235, 176, 176); */
-    background: linear-gradient(#f8bdc6, #ffffff);
+    background: linear-gradient(#c68d95, #ffffff);
 }
 
 .formulario__input {
